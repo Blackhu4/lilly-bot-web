@@ -382,3 +382,50 @@ footer {
         gap: 3rem;
     }
 }
+
+/* Legal Pages */
+.doc-section {
+    padding: 6rem 0;
+}
+
+.doc-content {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.doc-content h1 {
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.doc-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.doc-content p, .doc-content li {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.doc-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
