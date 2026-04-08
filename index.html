@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lilly Discord Bot - A legmenőbb magyar bot zenéhez, mókához és moderációhoz.">
+    <title>Lilly Discord Bot | AI slop bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="lilly_bot_avatar.png" type="image/png">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="lilly_bot_avatar.png" alt="Lilly Logo" class="nav-logo">
+                <span>Lilly Bot</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Funkciók</a></li>
+                <li><a href="#commands">Parancsok</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=1422985902590005309&permissions=8&integration_type=0&scope=bot+applications.commands"
+                        class="btn btn-primary">Meghívás</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 class="gradient-text">Ismerd meg Lilly-t!</h1>
+                    <p class="hero-description">A Lilly bot egy sokoldalú, magyar nyelvű Discord bot, amely
+                        zökkenőmentes zenehallgatást, szórakoztató játékokat és profi moderációt biztosít a
+                        szerverednek.</p>
+                    <div class="hero-cta">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1422985902590005309&permissions=8&integration_type=0&scope=bot+applications.commands"
+                            class="btn btn-large btn-primary" id="invite-btn-hero">Bot Hozzáadása</a>
+                        <a href="#features" class="btn btn-large btn-secondary">Több Információ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="lilly_bot_avatar.png" alt="Lilly Bot Mascot" class="floating-img">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title">Miért válaszd Lilly-t?</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Profi Zene & Rádió</h3>
+                        <p>Stabil FFmpeg alapú streaming, kristálytiszta hangzás és 24/7 rádió parancsok.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Szórakozás</h3>
+                        <p>8ball, Szerelmi kalkulátor, Kő-papír-olló és sok más interaktív parancs.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Moderáció</h3>
+                        <p>Biztonságos és könnyen kezelhető parancsok a közösséged védelmében.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">📊</div>
+                        <h3>Rendszerinfó</h3>
+                        <p>Kövesd nyomon a bot állapotát, az uptime-ot és a futtató gép adatait élőben.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commands" class="glass-section">
+            <div class="container">
+                <h2 class="section-title">Parancsok</h2>
+                <div class="commands-categories">
+                    <button class="category-btn active" data-category="fun">Móka</button>
+                    <button class="category-btn" data-category="music">Zene</button>
+                    <button class="category-btn" data-category="mod">Moderáció</button>
+                    <button class="category-btn" data-category="other">Egyéb</button>
+                </div>
+                <div class="commands-list" id="commands-display">
+                    <!-- Parancsok JS-szel töltődnek be -->
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <div class="container stats-flex">
+                <div class="stat-item">
+                    <span class="stat-value" id="server-count">10+</span>
+                    <span class="stat-label">Szerver</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="user-count">10+</span>
+                    <span class="stat-label">Felhasználó</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="uptime-value">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="lilly_bot_avatar.png" alt="Lilly Logo" class="footer-logo">
+                <p>&copy; 2026 Lilly Bot - Minden jog fenntartva.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://discord.gg/pgqejxuPV5">Discord Szerver</a>
+                <a href="https://github.com/Blackhu4/lilly-bot-v3">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
